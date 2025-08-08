@@ -1,0 +1,92 @@
+{
+  "questiontitle": "What is Git used for?",
+  "option1": "Compiling code",
+  "option2": "Version control",
+  "option3": "Running tests",
+  "option4": "Designing UI",
+  "correctans": "Version control",
+  "difficultylvl": "EASY",
+  "category": "GIT"
+}
+
+{
+  "questiontitle": "Which annotation is used to define a Spring Boot application?",
+  "option1": "@SpringBootApplication",
+  "option2": "@EnableAutoConfiguration",
+  "option3": "@ComponentScan",
+  "option4": "@Configuration",
+  "correctans": "@SpringBootApplication",
+  "difficultylvl": "MEDIUM",
+  "category": "SPRING_BOOT"
+}
+
+{
+  "questiontitle": "Which keyword is used to inherit a class in Java?",
+  "option1": "implement",
+  "option2": "extends",
+  "option3": "inherits",
+  "option4": "super",
+  "correctans": "extends",
+  "difficultylvl": "EASY",
+  "category": "JAVA"
+}
+
+{
+  "questiontitle": "Which tool is commonly used for dependency management in Java?",
+  "option1": "Git",
+  "option2": "Maven",
+  "option3": "Docker",
+  "option4": "Jenkins",
+  "correctans": "Maven",
+  "difficultylvl": "MEDIUM",
+  "category": "JAVA"
+}
+
+{
+  "questiontitle": "Which method is used to commit changes in Git?",
+  "option1": "git push",
+  "option2": "git save",
+  "option3": "git commit",
+  "option4": "git update",
+  "correctans": "git commit",
+  "difficultylvl": "EASY",
+  "category": "GIT"
+}
+
+{
+  "questiontitle": "Which annotation is used to expose REST endpoints in Spring Boot?",
+  "option1": "@Entity",
+  "option2": "@RestController",
+  "option3": "@Service",
+  "option4": "@Component",
+  "correctans": "@RestController",
+  "difficultylvl": "EASY",
+  "category": "SPRING_BOOT"
+}
+
+{
+  "questiontitle": "Which command initializes a new Git repository?",
+  "option1": "git start",
+  "option2": "git init",
+  "option3": "git create",
+  "option4": "git new",
+  "correctans": "git init",
+  "difficultylvl": "EASY",
+  "category": "GIT"
+}
+
+
+{
+  "questiontitle": "What does the @Autowired annotation do in Spring?",
+  "option1": "Starts the application",
+  "option2": "Injects dependencies",
+  "option3": "Creates a bean",
+  "option4": "Handles exceptions",
+  "correctans": "Injects dependencies",
+  "difficultylvl": "MEDIUM",
+  "category": "SPRING"
+}
+
+
+
+
