@@ -1,0 +1,65 @@
+microservices connect both and give the complete code from start
+
+public class Account {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String accountNumber;
+    private String type;
+    private Double balance;
+    private String status;
+}
+
+@RestController
+@RequestMapping("/api/accounts")
+public class AccountController {
+    @POSTMapping("/api/accounts")
+    public String createAccount() {
+        return "createAccount called";
+    }
+    @PUTMapping("/api/accounts/{id}")
+    public String updateAccount() {
+        return "updateAccount called";
+    }
+    @POSTMapping("/api/accounts/{id}/close")
+    public String closeAccount() {
+        return "closeAccount called";
+    }
+    @POSTMapping("/api/accounts/{id}/adjust")
+    public String adjustBalance() {
+        return "adjustBalance called";
+    }
+    @GETMapping("/api/accounts/{id}/balance")
+    public String getBalance() {
+        return "getBalance called";
+    }
+}
+
+
+
+public class Transaction {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String accountId;
+    private String type;
+    private Double amount;
+    private LocalDateTime timestamp;
+}
+
+@RestController
+@RequestMapping("/api/transactions")
+public class TransactionController {
+    @POSTMapping("/api/transactions/deposit")
+    public String deposit() {
+        return "deposit called";
+    }
+    @POSTMapping("/api/transactions/withdraw")
+    public String withdraw() {
+        return "withdraw called";
+    }
+    @GETMapping("/api/transactions/account/{accountId}")
+    public String getTransactions() {
+        return "getTransactions called";
+    }
+}
