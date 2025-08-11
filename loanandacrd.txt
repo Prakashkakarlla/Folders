@@ -1,0 +1,59 @@
+@Entity
+public class Loan {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String accountId;
+    private Double amount;
+    private Double interestRate;
+    private String status;
+}
+
+@RestController
+@RequestMapping("/api/loans")
+public class LoanController {
+    @POSTMapping("/api/loans/apply")
+    public String applyLoan() {
+        return "applyLoan called";
+    }
+    @POSTMapping("/api/loans/{id}/repay")
+    public String repayLoan() {
+        return "repayLoan called";
+    }
+    @GETMapping("/api/loans/{id}/interest")
+    public String calculateInterest() {
+        return "calculateInterest called";
+    }
+    @POSTMapping("/api/loans/{id}/close")
+    public String closeLoan() {
+        return "closeLoan called";
+    }
+}
+
+
+@Entity
+public class Card {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String accountId;
+    private String cardNumber;
+    private String type;
+    private String status;
+}
+@RestController
+@RequestMapping("/api/cards")
+public class CardController {
+    @POSTMapping("/api/cards/issue")
+    public String issueCard() {
+        return "issueCard called";
+    }
+    @POSTMapping("/api/cards/{id}/block")
+    public String blockCard() {
+        return "blockCard called";
+    }
+    @POSTMapping("/api/cards/{id}/close")
+    public String closeCard() {
+        return "closeCard called";
+    }
+}
